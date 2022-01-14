@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Barbecue Lovers Fan Page</title>
+  <meta name="description" content="Links and images assignment for IS 120">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Kalam:wght@700&family=Permanent+Marker&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles/styles.css">
+
+</head>
+
+<body>
+  <header>
+    <picture>
+      <source srcset="images/hero-1600-bbq.jpg" media="(min-width:901px)">
+      <source srcset="images/hero-900-bbq.jpg" media="(min-width:481px)">
+      <source srcset="images/hero-480-bbq.jpg" media="(max-width:480px)">
+      <img src="images/hero-900-bbq.jpg" alt="man grilling at a barbecue">
+    </picture>
+    <div class="overlay">
+      <h1>The Miracle of Barbecue</h1>
+      <p>One thing that makes the USA a wonderful place is its grilled meats.</p>
+    </div>
+  </header>
+  <div class="menu-bar">
+    <div class="menu-icon">
+      <svg>
+        <use xlink:href="#burger-icon" />
+      </svg>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="https://www.youtube.com/watch?v=sWNDAD2YLcw&ab_channel=ChicagoWhiteSox" target="_blank">A Fun
+            Video</a></li>
+        <li><a href="about/">About</a></li>
+        <li><a href="form/"> Form</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <main>
+    <article class="panel">
+      <div class="text-wrapper left">
+        <h3>Mmmmmeats are so yummmmy!</h3>
+        <p>What's a ward party without a BBQ grill?!</p>
+        <a class="button">Try Out My Sauce!</a>
+      </div>
+      <div class="image-wrapper">
+        <img src="images/family-bbq.jpg" alt="family barbecue">
+      </div>
+    </article>
+    <aside class="full-width">
+      <a class="link" href="https://www.youtube.com/watch?v=V_laNt7Sh6g&ab_channel=ComedyBites" target="_blank"> Enjoy
+        this
+        wholesome Ron Swanson meat compilation!</a>
+    </aside>
+    <article class="panel">
+      <div class="text-wrapper">
+        <h2>Ewww! Veggies?!?!</h2>
+        <p>Get that green stuff out of here!</p>
+        <a class="button">Dislike Veggies Button!</a>
+      </div>
+      <div class="image-wrapper left">
+        <img src="images/salad.jpg" alt="man gives a disgusting face at his veggies">
+      </div>
+    </article>
+  </main>
+  <div class="cards">
+    <div class="card">
+      <a>
+        <div class="image-wrapper">
+          <img src="images/brisket-400.jpg" alt="brisket">
+        </div>
+        <p>
+          <span>Yummy Brisket!</span>
+        </p>
+      </a>
+    </div>
+    <div class="card">
+      <a>
+        <div class="image-wrapper">
+          <img src="images/chicken-400.jpg" alt="chicken">
+        </div>
+        <p>
+          <span>Juicey Sweet Chicken!</span>
+        </p>
+      </a>
+    </div>
+    <div class="card">
+      <a>
+        <div class="image-wrapper">
+          <img src="images/steak-400.jpg" alt="steak">
+        </div>
+        <p>
+          <span>Edible Steak!</span>
+        </p>
+      </a>
+    </div>
+    <div class="card">
+      <a>
+        <div class="image-wrapper">
+          <img src="images/ribs-400.jpg" alt="ribs">
+        </div>
+        <p>
+          <span>Consumable Ribs!</span>
+        </p>
+      </a>
+    </div>
+  </div>
+  <footer>
+    Hopefully your enjoyed this wholesome page on BBQ'd meats!
+  </footer>
+</body>
+
+<script>
+  document.querySelector(".menu-icon").addEventListener("click", () => {
+    document.querySelector(".menu-bar").classList.toggle("open");
+  });
+</script>
+
+<svg id="Icons" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
+  <symbol id="burger-icon" viewBox="0 0 32 32">
+    <path
+      d="M11 9v2M21 9v2M16 8v2M27.8 14C26.9 8.3 21.9 4 16 4S5.1 8.3 4.2 14h23.6zM4 16l1.5 1c.9.6 2.1.6 3 0 .9-.6 2.1-.6 3 0 .9.6 2.1.6 3 0 .9-.6 2.1-.6 3 0 .9.6 2.1.6 3 0 .9-.6 2.1-.6 3 0 .9.6 2.1.6 3 0l1.5-1M27 24H5c-1.1 0-2-.9-2-2s.9-2 2-2h22c1.1 0 2 .9 2 2s-.9 2-2 2zM27 24v1.4c0 1.5-1.2 2.6-2.6 2.6H7.6C6.2 28 5 26.8 5 25.4V24" />
+  </symbol>
+</svg>
+
+</html>

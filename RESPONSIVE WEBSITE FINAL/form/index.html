@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <meta name="description" content="a form for input of stuff">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Kalam:wght@700&family=Permanent+Marker&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../styles/styles.css">
+    <style>
+        img {
+            width: 375px
+        }
+    </style>
+</head>
+
+<body class="form">
+    <div class="menu-bar">
+        <div class="menu-icon">
+            <svg>
+                <use xlink:href="#burger-icon" />
+            </svg>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../">Home</a></li>
+                <li><a href="../about/">About</a></li>
+                <li><a>Form</a></li>
+            </ul>
+        </nav>
+    </div>
+    <main>
+        <h1>Form</h1>
+        <div class="form-wrap">
+            <img src="../images/grill.svg" alt="grill icon">
+            <form action="">
+                <label>Full Name:</label>
+                <input type="text">
+
+                <label>Email (required):</label>
+                <input type="text" required>
+
+                <label>Phone Number:</label>
+                <input type="text">
+
+                <label>Birthdate:</label>
+                <input type="text" placeholder="mm/dd/yyyy">
+
+                <p class="question">What goes best with a BBQ? (Check all that apply)</p>
+
+                <input type="checkbox" id="baseball" name="complement" value="baseball">
+                <label for="baseball">Baseball</label>
+
+                <input type="checkbox" id="rootbeer" name="complement" value="rootbeer">
+                <label for="rootbeer">Rootbeer</label>
+
+                <input type="checkbox" id="jazz" name="complement" value="jazz">
+                <label for="jazz">Jazz</label>
+
+                <input type="checkbox" id="fourth" name="complement" value="fourth">
+                <label for="fourth">4th of July</label>
+
+                <p class="question">How many pounds of smoked brisket is too much?</p>
+
+                <input type="radio" name="taste" id="two" value="two">
+                <label for="two">2</label>
+
+                <input type="radio" name="taste" id="four" value="four">
+                <label for="four">4</label>
+
+                <input type="radio" name="taste" id="eight" value="eight">
+                <label for="eight">8</label>
+
+                <input type="radio" name="taste" id="silly" value="silly">
+                <label for="silly">What kind of question is that?</label>
+
+                <label for="long-text" class="question">What does your BBQ say about you?</label>
+
+                <textarea id="long-text" placeholder="Please be creative!"></textarea>
+
+                <input class="textbox" type="submit" value="Submit">
+            </form>
+            <div class="loader">
+                <div class="fire-left">
+                    <div class="main-fire"></div>
+                    <div class="particle-fire"></div>
+                </div>
+                <div class="fire-main">
+                    <div class="main-fire"></div>
+                    <div class="particle-fire"></div>
+                </div>
+                <div class="fire-right">
+                    <div class="main-fire"></div>
+                    <div class="particle-fire"></div>
+                </div>
+                <div class="fire-bottom">
+                    <div class="main-fire"></div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+<script>
+    document.querySelector(".menu-icon").addEventListener("click", () => {
+        document.querySelector(".menu-bar").classList.toggle("open");
+    });
+</script>
+
+<svg id="Icons" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
+    <symbol id="burger-icon" viewBox="0 0 32 32">
+        <path
+            d="M11 9v2M21 9v2M16 8v2M27.8 14C26.9 8.3 21.9 4 16 4S5.1 8.3 4.2 14h23.6zM4 16l1.5 1c.9.6 2.1.6 3 0 .9-.6 2.1-.6 3 0 .9.6 2.1.6 3 0 .9-.6 2.1-.6 3 0 .9.6 2.1.6 3 0 .9-.6 2.1-.6 3 0 .9.6 2.1.6 3 0l1.5-1M27 24H5c-1.1 0-2-.9-2-2s.9-2 2-2h22c1.1 0 2 .9 2 2s-.9 2-2 2zM27 24v1.4c0 1.5-1.2 2.6-2.6 2.6H7.6C6.2 28 5 26.8 5 25.4V24" />
+    </symbol>
+</svg>
+
+</html>

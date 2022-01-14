@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <meta name="description" content="about my awesome website">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Kalam:wght@700&family=Permanent+Marker&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="menu-bar">
+        <div class="menu-icon">
+            <svg>
+                <use xlink:href="#burger-icon" />
+            </svg>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../">Home</a></li>
+                <li><a>About</a></li>
+                <li><a href="../form/">Form</a></li>
+            </ul>
+        </nav>
+    </div>
+    <main>
+        <article>
+            <h1>About</h1>
+            <h3>Here is my favorite quote:</h3>
+            <p>
+                "You know what they say. 'Fool me once, strike one, but fool me twice...strike three.'"
+            </p>
+            <p>--- Michael Scott</p>
+        </article>
+        <article>
+            <h2>What to expect from this website:</h2>
+            <ul>
+                <li>A good chuckle</li>
+                <li>A self-made promise to never consume a vegan product</li>
+                <li>An appreciation for the joy that cows, pigs, turkey, and chicken have made in our lives</li>
+                <li>A text to your loved one asking for a weber grill for your birthday</li>
+                <li>A feeling of patriotism within your soul</li>
+            </ul>
+            <p>
+                <em>May we continue to appreciate grilled meats and find new ways to enjoy and share them with
+                    others.</em>
+            </p>
+        </article>
+    </main>
+
+    <script>
+        document.querySelector('.menu-icon').addEventListener('click', () => {
+            document.querySelector('.menu-bar').classList.toggle('open')
+        })
+    </script>
+
+    <svg id="Icons" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
+        <symbol id="burger-icon" viewBox="0 0 32 32">
+            <path
+                d="M11 9v2M21 9v2M16 8v2M27.8 14C26.9 8.3 21.9 4 16 4S5.1 8.3 4.2 14h23.6zM4 16l1.5 1c.9.6 2.1.6 3 0 .9-.6 2.1-.6 3 0 .9.6 2.1.6 3 0 .9-.6 2.1-.6 3 0 .9.6 2.1.6 3 0 .9-.6 2.1-.6 3 0 .9.6 2.1.6 3 0l1.5-1M27 24H5c-1.1 0-2-.9-2-2s.9-2 2-2h22c1.1 0 2 .9 2 2s-.9 2-2 2zM27 24v1.4c0 1.5-1.2 2.6-2.6 2.6H7.6C6.2 28 5 26.8 5 25.4V24" />
+        </symbol>
+    </svg>
+</body>
+
+</html>
